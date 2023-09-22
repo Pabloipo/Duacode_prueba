@@ -1,0 +1,39 @@
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Registro de equipo</title>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <h1><u><strong>Registrar equipos</strong></u></h1>
+    <!-- formulario de registro -->
+    <form id="equipoForm" action="controladores/registrar_equipo.php" method="post">
+        <label for="nombre">Nombre del equipo:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="ciudad">Ciudad del equipo:</label>
+        <input type="text" id="ciudad" name="ciudad"><br>
+
+        <label for="deporte">Deporte:</label>
+        <select id="deporte" name="deporte">
+            <option value="Fútbol">Fútbol</option>
+            <option value="Baloncesto">Baloncesto</option>
+            <option value="Tenis">Volleyball</option>
+        </select><br>
+
+        <label for="fecha_creacion">Fecha de Creación del equipo:</label>
+        <input type="date" id="fecha_creacion" name="fecha_creacion"><br><br>
+
+        <input type="submit" value="Registrar equipo">
+    </form>
+    
+    <a href="vistas/listado_equipos.php">Ver listado de equipo</a>
+
+</body>
+</html>
+
+
